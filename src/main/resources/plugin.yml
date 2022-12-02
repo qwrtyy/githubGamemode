@@ -1,0 +1,6 @@
+name: githubGamemode
+version: '${project.version}'
+main: cc.qwrtyy.github.Main
+authors: [ qwrtyy ]
+commands:
+  gamemode:

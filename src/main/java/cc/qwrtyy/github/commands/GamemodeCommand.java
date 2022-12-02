@@ -14,7 +14,7 @@ import org.jetbrains.annotations.NotNull;
 public class GamemodeCommand implements CommandExecutor {
     public boolean onCommand(final CommandSender sender, final Command cmd, final String label, final String[] args) {
         if (!(sender instanceof Player)) {
-            sender.sendMessage(fixColor("&f[githubGamemode] &4[!] &7Nie jestes &cgraczem!"));
+            sendMessage(sender, "&7[githubGamemode] &4[!] &7Nie jestes &cgraczem!");
             return true;
         }
         Player player = (Player)sender;
@@ -48,7 +48,7 @@ public class GamemodeCommand implements CommandExecutor {
 
         return true;
     }
-    private boolean sendMessage(final @NotNull Player player, final String message) {
+    private boolean sendMessage(final @NotNull CommandSender player, final String message) {
         player.sendMessage(fixColor(message));
         return true;
     }

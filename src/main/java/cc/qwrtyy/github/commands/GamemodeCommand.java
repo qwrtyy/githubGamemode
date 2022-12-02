@@ -1,3 +1,8 @@
+/*
+ * githubGamemode
+ * Copyright (C) 2022 qwrtyy
+ */
+
 package cc.qwrtyy.github.commands;
 
 

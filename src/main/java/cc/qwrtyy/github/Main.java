@@ -6,12 +6,11 @@ import org.bukkit.plugin.java.JavaPlugin;
 public final class Main extends JavaPlugin {
     @Override
     public void onEnable() {
-        final long l = System.currentTimeMillis();
-        final long l2 = System.currentTimeMillis() - l;
+        final long load = System.currentTimeMillis() - System.currentTimeMillis(); //async
         Bukkit.getLogger().info("");
         Bukkit.getLogger().info("### Trwa wczytywanie pluginu na gamemode ###");
         getCommand("gamemode").setExecutor(new GamemodeCommand());
-        Bukkit.getLogger().info("     Komendy zaladowano w czasie: " + l2 + "  ms.");
+        Bukkit.getLogger().info("     Komendy zaladowano w czasie: " + load + "ms.");
         Bukkit.getLogger().info("");
         // Plugin startup logic
     }
